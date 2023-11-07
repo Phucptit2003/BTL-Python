@@ -55,7 +55,7 @@ def recognize_and_insert_text():
 
     if file_path:
         # Khởi tạo easyocr
-        reader = easyocr.Reader(['en'])  # Chọn ngôn ngữ bạn muốn nhận dạng
+        reader = easyocr.Reader([source_language])  # Chọn ngôn ngữ bạn muốn nhận dạng
 
         result = reader.readtext(file_path)
         recognized_text = ""
